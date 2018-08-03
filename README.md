@@ -10,7 +10,7 @@ npm install @opuscapita/oc-cm-navigation-header
 ```
 
 ### Demo
-View the [DEMO](https://opuscapita.github.io/oc-cm-filtering-pane)
+View the [DEMO](https://opuscapita.github.io/oc-cm-navigation-header)
 
 ### Builds
 #### UMD
