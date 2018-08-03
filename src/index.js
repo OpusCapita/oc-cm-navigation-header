@@ -1,3 +1,3 @@
-import Example from './example.component';
+import NavigationHeader from './header-navigation.component';
 
-export default Example;
+export default NavigationHeader;

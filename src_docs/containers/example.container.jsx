@@ -6,7 +6,7 @@ import GithubLogo from '../images/logo-github.svg';
 export default () => (
   <Grid>
     <Row>
-      <Col xs={11} md={8} lg={6}>
+      <Col xs={11} md={8} lg={12}>
         <Row>
           <Col xs={10}>
             <h3>React component template</h3>
@@ -20,9 +20,7 @@ export default () => (
             </a>
           </Col>
         </Row>
-        <Panel>
-          <ExampleComponent />
-        </Panel>
+        <ExampleComponent />
       </Col>
     </Row>
   </Grid>

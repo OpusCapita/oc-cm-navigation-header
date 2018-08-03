@@ -1,10 +1,10 @@
 {
   "author": "OpusCapita (www.opuscapita.com)",
-  "name": "@opuscapita/react-component-template",
+  "name": "@opuscapita/oc-cm-navigation-header",
   "version": "0.0.1",
   "private": false,
   "license": "MIT",
-  "description": "OpusCapita react component template",
+  "description": "OpusCapita CM Navigation Header.",
   "main": "lib/umd/react-component-template.js",
   "cjs": "lib/cjs/index.js",
   "es": "lib/es/index.js",
@@ -88,6 +88,7 @@
     "sass-loader": "7.0.3",
     "sinon": "6.0.0",
     "style-loader": "0.21.0",
+    "styled-components": "3.4.0",
     "url-loader": "1.0.1",
     "webpack": "3.11.0",
     "webpack-dev-server": "2.11.2",
@@ -97,10 +98,14 @@
     "write-file-webpack-plugin": "4.3.2"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-common-styles": "2.1.0"
+    "@opuscapita/oc-cm-common-layouts": "0.1.2",
+    "@opuscapita/oc-cm-common-styles": "2.1.0",
+    "@opuscapita/react-dropdown": "2.1.1",
+    "@opuscapita/react-icons": "2.0.3",
+    "@opuscapita/react-list-items": "0.4.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpusCapita/react-component-template.git"
+    "url": "https://github.com/OpusCapita/oc-cm-navigation-header.git"
   }
 }
