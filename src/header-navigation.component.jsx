@@ -40,7 +40,7 @@ class HeaderNavigation extends React.PureComponent {
 
   renderCenterContent = () => {
     const { paging } = this.props;
-    if (!paging.itemIds.length || !paging.itemIds.size) return null;
+    if (!paging.itemIds.length && !paging.itemIds.size) return null;
 
     return (
       <ListItems
