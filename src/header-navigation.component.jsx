@@ -40,7 +40,7 @@ class HeaderNavigation extends React.PureComponent {
 
   renderCenterContent = () => {
     const { paging } = this.props;
-    if (!paging.itemIds.length) return null;
+    if (!paging.itemIds.length || !paging.itemIds.size) return null;
 
     return (
       <ListItems
@@ -66,10 +66,13 @@ HeaderNavigation.propTypes = {
   title: PropTypes.string,
   onBackClick: PropTypes.func,
   paging: PropTypes.shape({
-    itemIds: PropTypes.arrayOf(PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ])),
+    itemIds: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ])),
+      PropTypes.shape({}),
+    ]),
   }),
   dropdown: PropTypes.shape({
     menuItems: PropTypes.arrayOf(PropTypes.oneOfType([
