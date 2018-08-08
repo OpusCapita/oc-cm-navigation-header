@@ -5,6 +5,9 @@
 ## <next>
 * Added babel-polyfill for DEMO
 
+## 0.0.3
+* More small fixes.
+
 ## 0.0.2 
 * itemIds can now be either array or object (Immutable List)
 
