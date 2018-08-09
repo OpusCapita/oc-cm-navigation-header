@@ -1,9 +1,10 @@
 # Changelog
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
-
 ## <next>
-* Added babel-polyfill for DEMO
+
+## 0.1.0
+* Added id & className props
 
 ## 0.0.3
 * More small fixes.
@@ -13,3 +14,4 @@
 
 ## 0.0.1
 * Initial release
+* Added babel-polyfill for DEMO
