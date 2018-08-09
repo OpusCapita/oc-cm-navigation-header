@@ -45,7 +45,7 @@ class HeaderNavigation extends React.PureComponent {
 
     // If there's an array of 1 or more items, OR ImmutableJs List with 1 or more items
     if (!paging.itemIds.length && !paging.itemIds.size) return null;
-    return <ListItems id={`${id}-pagination`} {...paging} />
+    return <ListItems id={`${id}-pagination`} {...paging} />;
   };
 
   render() {
