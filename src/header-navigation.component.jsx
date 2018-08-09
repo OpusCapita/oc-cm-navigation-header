@@ -16,44 +16,45 @@ const BackButton = Primitive.BorderlessButton.extend`
 
 class HeaderNavigation extends React.PureComponent {
   getRightContent = () => {
-    const { dropdown } = this.props;
+    const { dropdown, id } = this.props;
     if (!dropdown.menuItems.length) return null;
 
     return (
       <DropdownMenu
-        id={`${classPrefix}_navigation-header-menu`}
+        id={`${id}-menu`}
         {...dropdown}
       />
     );
   };
 
   renderLeftContent = () => {
-    const { onBackClick, title } = this.props;
+    const { onBackClick, title, id } = this.props;
+
     return (
       <React.Fragment>
         {typeof onBackClick === 'function' &&
-        <BackButton onClick={onBackClick}><Icon type="indicator" name="arrowLeft" /></BackButton>}
-        {title && <Primitive.Title>{title}</Primitive.Title>}
+        <BackButton id={`${id}-back-button`} onClick={onBackClick}>
+          <Icon type="indicator" name="arrowLeft" />
+        </BackButton>}
+        {title && <Primitive.Title id={`${id}-title`}>{title}</Primitive.Title>}
       </React.Fragment>
     );
   };
 
   renderCenterContent = () => {
-    const { paging } = this.props;
-    if (!paging.itemIds.length && !paging.itemIds.size) return null;
+    const { paging, id } = this.props;
 
-    return (
-      <ListItems
-        id={`${classPrefix}_navigation-header-items`}
-        {...paging}
-      />
-    );
+    // If there's an array of 1 or more items, OR ImmutableJs List with 1 or more items
+    if (!paging.itemIds.length && !paging.itemIds.size) return null;
+    return <ListItems id={`${id}-pagination`} {...paging} />
   };
 
   render() {
+    const { className, id } = this.props;
     return (
       <Header.Basic
-        className={`${classPrefix}_navigation-header`}
+        className={`${classPrefix}_navigation-header ${className}`}
+        id={id}
         left={this.renderLeftContent()}
         center={this.renderCenterContent()}
         right={this.getRightContent()}
@@ -64,6 +65,8 @@ class HeaderNavigation extends React.PureComponent {
 
 HeaderNavigation.propTypes = {
   title: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  className: PropTypes.string,
   onBackClick: PropTypes.func,
   paging: PropTypes.shape({
     itemIds: PropTypes.oneOfType([
@@ -85,6 +88,7 @@ HeaderNavigation.propTypes = {
 
 HeaderNavigation.defaultProps = {
   title: null,
+  className: null,
   onBackClick: null,
   dropdown: {
     menuItems: [],

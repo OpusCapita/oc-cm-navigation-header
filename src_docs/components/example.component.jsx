@@ -36,6 +36,8 @@ export default class ComponentView extends React.PureComponent {
     return (
       <div style={{ padding: '20px' }}>
         <Header
+          id="example"
+          className="example-cls"
           title="This is the title"
           dropdown={this.getDropdownMenu()}
           onBackClick={this.onBackClick}
