@@ -10,7 +10,7 @@ export default class ComponentView extends React.PureComponent {
   }
 
   onBackClick = () => {
-    alert('Back clicked');
+    alert('Back clicked'); // eslint-disable-line no-alert
   };
 
   onPageChange = (newId) => {

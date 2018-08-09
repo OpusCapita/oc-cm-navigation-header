@@ -4,7 +4,6 @@ import { ListItems } from '@opuscapita/react-list-items';
 import { DropdownMenu } from '@opuscapita/react-dropdown';
 import { Icon } from '@opuscapita/react-icons';
 import { Header, Primitive, theme } from '@opuscapita/oc-cm-common-layouts';
-// App imports
 
 const classPrefix = 'oc-common-layouts';
 
