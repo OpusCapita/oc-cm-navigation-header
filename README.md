@@ -29,7 +29,8 @@ Also you need to configure sass loader, since all the styles are in sass format.
 | onBackClick         | function      | null     | Back button click callback. Button is hidden, if function is not provided. |
 | dropdown            | dropdownType  |          | Defines options for the dropdown menu (see dropdownType for more information). |
 | paging              | pagingType    |          | Defines options for the paging (see pagingType for more information). |
-
+| className           | string        |          | Custom class name |
+| id                  | string        | required | The ID |
 
 ###### Types
 
