@@ -10,12 +10,10 @@ const classPrefix = 'oc-common-layouts';
 const BackButton = Primitive.BorderlessButton.extend`
   height: ${theme.header.button.height};
   width: ${theme.header.button.height};
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: ${theme.gutterWidth};
   svg {
-    heigth: 2rem;
-    width: 2rem;
+    height: ${theme.header.button.height};
+    width: ${theme.header.button.height};
   }
 `;
 

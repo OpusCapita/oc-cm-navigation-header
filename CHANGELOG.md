@@ -3,6 +3,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 0.1.1
 * Updated @opuscapita/oc-cm-common-layouts and @opuscapita/react-icons versions
 
 ## 0.1.0
