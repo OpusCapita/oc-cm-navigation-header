@@ -1,7 +1,7 @@
 {
   "author": "OpusCapita (www.opuscapita.com)",
   "name": "@opuscapita/oc-cm-navigation-header",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "license": "MIT",
   "description": "OpusCapita CM Navigation Header.",
@@ -98,10 +98,10 @@
     "write-file-webpack-plugin": "4.3.2"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-common-layouts": "0.1.2",
+    "@opuscapita/oc-cm-common-layouts": "0.2.5",
     "@opuscapita/oc-cm-common-styles": "2.1.0",
     "@opuscapita/react-dropdown": "2.1.2",
-    "@opuscapita/react-icons": "2.0.3",
+    "@opuscapita/react-icons": "3.0.1",
     "@opuscapita/react-list-items": "0.4.1"
   },
   "repository": {

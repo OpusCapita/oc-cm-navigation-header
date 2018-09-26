@@ -10,7 +10,11 @@ const classPrefix = 'oc-common-layouts';
 const BackButton = Primitive.BorderlessButton.extend`
   height: ${theme.header.button.height};
   width: ${theme.header.button.height};
-  font-size: 16px;
+  margin-right: ${theme.gutterWidth};
+  svg {
+    height: ${theme.header.button.height};
+    width: ${theme.header.button.height};
+  }
 `;
 
 class HeaderNavigation extends React.PureComponent {
