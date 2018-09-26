@@ -2,6 +2,7 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 ## <next>
+* Updated react-dropdown package
 
 ## 0.1.0
 * Added id & className props

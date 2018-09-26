@@ -100,7 +100,7 @@
   "dependencies": {
     "@opuscapita/oc-cm-common-layouts": "0.1.2",
     "@opuscapita/oc-cm-common-styles": "2.1.0",
-    "@opuscapita/react-dropdown": "2.1.1",
+    "@opuscapita/react-dropdown": "2.1.2",
     "@opuscapita/react-icons": "2.0.3",
     "@opuscapita/react-list-items": "0.4.1"
   },
