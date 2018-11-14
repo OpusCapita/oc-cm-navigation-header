@@ -3,7 +3,13 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
-* Updated react-dropdown package
+
+## 0.1.3
+* Upgraded all possible npm packages
+* Change to use ThemeProvider
+
+## 0.1.2
+* Upgraded `react-dropdown` package to version 2.1.2
 
 ## 0.1.1
 * Updated @opuscapita/oc-cm-common-layouts and @opuscapita/react-icons versions

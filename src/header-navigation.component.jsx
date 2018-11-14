@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ListItems } from '@opuscapita/react-list-items';
+import styled from 'styled-components';
+import ListItems from '@opuscapita/react-list-items';
 import { DropdownMenu } from '@opuscapita/react-dropdown';
 import { Icon } from '@opuscapita/react-icons';
-import { Header, Primitive, theme } from '@opuscapita/oc-cm-common-layouts';
+import { Header, Primitive } from '@opuscapita/oc-cm-common-layouts';
 
 const classPrefix = 'oc-common-layouts';
 
-const BackButton = Primitive.BorderlessButton.extend`
-  height: ${theme.header.button.height};
-  width: ${theme.header.button.height};
-  margin-right: ${theme.gutterWidth};
+const BackButton = styled(Primitive.BorderlessButton)`
+  height: ${props => props.theme.header.button.height};
+  width: ${props => props.theme.header.button.height};
+  margin-right: ${props => props.theme.gutterWidth};
   svg {
-    height: ${theme.header.button.height};
-    width: ${theme.header.button.height};
+    height: ${props => props.theme.header.button.height};
+    width: ${props => props.theme.header.button.height};
   }
 `;
 
