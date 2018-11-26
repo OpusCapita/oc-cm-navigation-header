@@ -4,6 +4,9 @@
 
 ## <next>
 
+## 0.1.4
+* Upgrade @opuscapita/oc-cm-common-layouts
+
 ## 0.1.3
 * Upgraded all possible npm packages
 * Change to use ThemeProvider

@@ -103,7 +103,7 @@
     "write-file-webpack-plugin": "4.4.1"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-common-layouts": "2.5.2",
+    "@opuscapita/oc-cm-common-layouts": "2.5.3",
     "@opuscapita/oc-cm-common-styles": "3.0.0",
     "@opuscapita/react-dropdown": "2.2.1",
     "@opuscapita/react-icons": "3.0.3",
