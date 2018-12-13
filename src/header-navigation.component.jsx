@@ -20,14 +20,18 @@ const BackButton = styled(Primitive.BorderlessButton)`
 
 class HeaderNavigation extends React.PureComponent {
   getRightContent = () => {
-    const { dropdown, id } = this.props;
-    if (!dropdown.menuItems.length) return null;
+    const { dropdown, id, rightContent } = this.props;
 
     return (
-      <DropdownMenu
-        id={`${id}-menu`}
-        {...dropdown}
-      />
+      <React.Fragment>
+        {rightContent}
+        {dropdown.menuItems.length ?
+          <DropdownMenu
+            id={`${id}-menu`}
+            {...dropdown}
+          />
+        : null}
+      </React.Fragment>
     );
   };
 
@@ -72,6 +76,7 @@ HeaderNavigation.propTypes = {
   id: PropTypes.string.isRequired,
   className: PropTypes.string,
   onBackClick: PropTypes.func,
+  rightContent: PropTypes.node,
   paging: PropTypes.shape({
     itemIds: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.oneOfType([
@@ -100,6 +105,7 @@ HeaderNavigation.defaultProps = {
   paging: {
     itemIds: [],
   },
+  rightContent: null,
 };
 
 export default HeaderNavigation;
