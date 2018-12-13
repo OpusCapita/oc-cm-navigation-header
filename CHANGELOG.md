@@ -3,6 +3,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+- rightContent prop added
+- min React peerDepency set to React 16 (React.Fragments not supported in earlir versions)
 
 ## 0.1.4
 * Upgrade @opuscapita/oc-cm-common-layouts

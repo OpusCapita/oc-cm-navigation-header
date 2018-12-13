@@ -31,6 +31,7 @@ Also you need to configure sass loader, since all the styles are in sass format.
 | paging              | pagingType    |          | Defines options for the paging (see pagingType for more information). |
 | className           | string        |          | Custom class name |
 | id                  | string        | required | The ID |
+| rightContent  | node          | null     | an option to add custom right aligned content before dropdwon menu |
 
 ###### Types
 
