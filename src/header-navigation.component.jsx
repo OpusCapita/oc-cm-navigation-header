@@ -58,7 +58,7 @@ class HeaderNavigation extends React.PureComponent {
   };
 
   render() {
-    const { className, id } = this.props;
+    const { className, id, sideSectionBasis } = this.props;
     return (
       <Header.Basic
         className={`${classPrefix}_navigation-header ${className}`}
@@ -66,6 +66,7 @@ class HeaderNavigation extends React.PureComponent {
         left={this.renderLeftContent()}
         center={this.renderCenterContent()}
         right={this.getRightContent()}
+        sideSectionBasis={sideSectionBasis}
       />
     );
   }
@@ -77,6 +78,7 @@ HeaderNavigation.propTypes = {
   className: PropTypes.string,
   onBackClick: PropTypes.func,
   rightContent: PropTypes.node,
+  sideSectionBasis: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   paging: PropTypes.shape({
     itemIds: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.oneOfType([
@@ -106,6 +108,7 @@ HeaderNavigation.defaultProps = {
     itemIds: [],
   },
   rightContent: null,
+  sideSectionBasis: '200px',
 };
 
 export default HeaderNavigation;
