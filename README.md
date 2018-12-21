@@ -32,6 +32,7 @@ Also you need to configure sass loader, since all the styles are in sass format.
 | className           | string        |          | Custom class name |
 | id                  | string        | required | The ID |
 | rightContent  | node          | null     | an option to add custom right aligned content before dropdown menu |
+| sideSectionBasis         | string, number   | 200px      | Side column's (left, right) flex-basis value. The center column will take all the remaining space |
 
 ###### Types
 

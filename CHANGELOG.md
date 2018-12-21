@@ -2,6 +2,9 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
+## 0.3.0
+- sideSectionBasis prop added
+
 ## 0.2.0
 - rightContent prop added
 - min React peerDependency set to React 16 (React.Fragments not supported in earlier versions)
