@@ -77,7 +77,7 @@ HeaderNavigation.propTypes = {
   id: PropTypes.string.isRequired,
   className: PropTypes.string,
   onBackClick: PropTypes.func,
-  rightContent: PropTypes.node,
+  rightContent: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
   sideSectionBasis: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   paging: PropTypes.shape({
     itemIds: PropTypes.oneOfType([
