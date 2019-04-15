@@ -2,6 +2,9 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
+## <next>
+- Added Storybook
+
 ## 0.3.0
 - sideSectionBasis prop added
 
