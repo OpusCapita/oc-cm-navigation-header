@@ -4,7 +4,7 @@
 ## <next>
 
 ## 1.0.0
-* Upgraded all packages
+* Upgraded all packages (react 16.8.6, webpack4, babel 7)
 * Added Storybook
 
 ## 0.3.0
