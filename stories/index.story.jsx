@@ -62,4 +62,3 @@ storiesOf('@opuscapita/oc-cm-navigation-header', module)
       </ThemeProvider>
     );
   });
-

@@ -9,12 +9,12 @@ import { Header, Primitive } from '@opuscapita/oc-cm-common-layouts';
 const classPrefix = 'oc-common-layouts';
 
 const BackButton = styled(Primitive.BorderlessButton)`
-  height: ${props => props.theme.header.button.height};
-  width: ${props => props.theme.header.button.height};
-  margin-right: ${props => props.theme.gutterWidth};
+  height: ${(props) => props.theme.header.button.height};
+  width: ${(props) => props.theme.header.button.height};
+  margin-right: ${(props) => props.theme.gutterWidth};
   svg {
-    height: ${props => props.theme.header.button.height};
-    width: ${props => props.theme.header.button.height};
+    height: ${(props) => props.theme.header.button.height};
+    width: ${(props) => props.theme.header.button.height};
   }
 `;
 
@@ -23,15 +23,16 @@ class HeaderNavigation extends React.PureComponent {
     const { dropdown, id, rightContent } = this.props;
 
     return (
-      <React.Fragment>
+      <>
         {rightContent}
-        {dropdown.menuItems.length ?
-          <DropdownMenu
-            id={`${id}-menu`}
-            {...dropdown}
-          />
-        : null}
-      </React.Fragment>
+        {dropdown.menuItems.length
+          ? (
+            <DropdownMenu
+              id={`${id}-menu`}
+              {...dropdown}
+            />
+          ) : null}
+      </>
     );
   };
 
@@ -39,13 +40,20 @@ class HeaderNavigation extends React.PureComponent {
     const { onBackClick, title, id } = this.props;
 
     return (
-      <React.Fragment>
-        {typeof onBackClick === 'function' &&
-        <BackButton id={`${id}-back-button`} onClick={onBackClick}>
-          <Icon type="indicator" name="arrowLeft" />
-        </BackButton>}
-        {title && <Primitive.Title id={`${id}-title`}>{title}</Primitive.Title>}
-      </React.Fragment>
+      <>
+        {typeof onBackClick === 'function'
+        && (
+          <BackButton id={`${id}-back-button`} onClick={onBackClick}>
+            <Icon type="indicator" name="arrowLeft" />
+          </BackButton>
+        )}
+        {title
+        && (
+          <Primitive.Title id={`${id}-title`}>
+            {title}
+          </Primitive.Title>
+        )}
+      </>
     );
   };
 

@@ -26,11 +26,14 @@ export default class ComponentView extends React.PureComponent {
       { id: 3, title: 'Item 3' }],
   });
 
-  getPaging = () => ({
-    goToItem: this.onPageChange,
-    itemIds: this.getItemIds(),
-    itemId: this.state.currentId,
-  });
+  getPaging = () => {
+    const { currentId } = this.state;
+    return {
+      goToItem: this.onPageChange,
+      itemIds: this.getItemIds(),
+      itemId: currentId,
+    };
+  }
 
   render() {
     return (

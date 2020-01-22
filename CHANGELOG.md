@@ -1,16 +1,18 @@
 # Changelog
-
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
-- Added Storybook
+
+## 1.0.0
+* Upgraded all packages
+* Added Storybook
 
 ## 0.3.0
-- sideSectionBasis prop added
+* sideSectionBasis prop added
 
 ## 0.2.0
-- rightContent prop added
-- min React peerDependency set to React 16 (React.Fragments not supported in earlier versions)
+* rightContent prop added
+* min React peerDependency set to React 16 (React.Fragments not supported in earlier versions)
 
 ## 0.1.4
 * Upgrade @opuscapita/oc-cm-common-layouts
